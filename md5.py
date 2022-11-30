@@ -103,7 +103,7 @@ class TestMD5(unittest.TestCase):
         f = open('md5.txt', 'r')
         text = f.read()
         self.md5.do_hash(text)
-        expected_md5 = '190830bc20c97a8d485e607410ed648a'
+        expected_md5 = '9e107d9d372bb6826bd81d3542a419d6'
         actual_md5 = self.md5.hex_digest()
         self.assertEqual(actual_md5, expected_md5)
         f.close()
